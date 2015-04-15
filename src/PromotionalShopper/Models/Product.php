@@ -26,6 +26,11 @@ class Product
     private $categories = [];
 
     /**
+     * @var float
+     */
+    private $discount = 0.00;
+
+    /**
      * Set the Product Title
      * @param string $title
      */
@@ -87,5 +92,21 @@ class Product
     public function hasCategory($category)
     {
         return isset($this->categories[$category]) ? true : false;
+    }
+
+    /**
+     * Sets any discount amount on this product
+     * @param $amount
+     */
+    public function setDiscount($amount){
+        $this->discount = $amount;
+    }
+
+    /**
+     * Gets any discount amount on this product
+     * @return float
+     */
+    public function getDiscount(){
+        return $this->discount;
     }
 }

@@ -16,7 +16,7 @@ class PromotionFactory
      */
     private static $promotions = [
         "ThreeForTwo" => "3 for the price of 2",
-        "BuyShampooGetConditionHalfPrice" => "Buy Shampoo And Get Condition 50% off"
+        "HalfPriceHairCombo" => "Buy Shampoo And Get Condition 50% off"
     ];
 
     /**

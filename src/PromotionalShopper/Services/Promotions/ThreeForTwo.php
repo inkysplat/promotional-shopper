@@ -42,7 +42,7 @@ class ThreeForTwo implements PromotionInterface
      * Sets the Order to Apply the Promotion to.
      * @param Order $order
      */
-    public function setOrder(Order $order)
+    public function setOrder(Order &$order)
     {
         $this->order = $order;
 
@@ -65,6 +65,7 @@ class ThreeForTwo implements PromotionInterface
         $discounted = array_slice($products, 0, $numberOfThrees);
         //give us the price of all the remaining items
         foreach ($discounted as $product) {
+            $order->applyDiscount($product, $product->getPrice());
             $this->discount += $product->getPrice();
         }
 

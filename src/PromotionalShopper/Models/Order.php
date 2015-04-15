@@ -101,4 +101,13 @@ class Order
     {
         $this->promotion->setOrder($this);
     }
+
+    public function applyDiscount(Product $product, $discount){
+        foreach($this->getProducts() as &$products){
+            if($product->getTitle() == $products->getTitle()){
+                $products->setDiscount($discount);
+                return;
+            }
+        }
+    }
 }

@@ -15,7 +15,7 @@ interface PromotionInterface
      * @param Order $order
      * @return mixed
      */
-    public function setOrder(Order $order);
+    public function setOrder(Order &$order);
 
     /**
      * Description of the Promotion

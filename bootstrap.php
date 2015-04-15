@@ -15,6 +15,7 @@ require_once ROOT_PATH . 'src/PromotionalShopper/Models/Category.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Models/Product.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Interfaces/PromotionInterface.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Services/Promotions/ThreeForTwo.php';
+require_once ROOT_PATH . 'src/PromotionalShopper/Services/Promotions/HalfPriceHairCombo.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Services/PromotionFactory.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Commands/PromoCommand.php';
 require_once ROOT_PATH . 'src/PromotionalShopper/Application.php';
