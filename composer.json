@@ -1,0 +1,13 @@
+{
+    "name": "inkysplat/feelunique",
+    "authors": [
+        {
+            "name": "Adam Nicholls",
+            "email": "inkysplat@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "~4.6",
+        "symfony/console": "~2.6"
+    }
+}
